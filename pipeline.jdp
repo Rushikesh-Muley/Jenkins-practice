@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+    stages{
+        stage('PULL STAGE'){
+            steps{
+                git 'https://github.com/Rushikesh-Muley/Jenkins-practice.git
+		echo "Pull success"
+            }
+        }
+        stage('Build Stage'){
+            steps{
+                echo "Build success"
+            }
+        }
+        stage('Test STAGE'){
+            steps{
+                echo "Test success"
+            }
+        }
+        stage('Deploy Stage'){
+            steps{
+                echo "Deploy success"
+            }
+        }
+    }
+}
